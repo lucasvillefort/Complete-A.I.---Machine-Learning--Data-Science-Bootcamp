@@ -1,0 +1,243 @@
+1) Types of Machine Learning Problems:
+    - Classification
+    - Regression
+    - Clustering
+    - Dimensionality Reduction
+    - Recommendation Systems
+    - Reinforcement Learning
+    - Natural Language Processing
+    - Computer Vision
+    - Time Series Forecasting
+    - Anomaly Detection
+    - Sentiment Analysis
+    - Image Recognition
+    - Object Detection
+2) the best 20 Types of Classification Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Random Forest
+    - XGBoost
+    - LightGBM
+    - CatBoost
+    - Gradient Boosting
+    - AdaBoost
+    - Extra Trees
+    - K-Nearest Neighbors
+    - Support Vector Machines
+    - Logistic Regression
+    - Decision Trees
+    - Neural Networks
+    - Naive Bayes
+    - Linear Discriminant Analysis
+    - Quadratic Discriminant Analysis
+    - Stochastic Gradient Descent
+    - Bagging
+    - Voting
+    - Stacking
+    - Multi-layer Perceptron
+
+3) the best 20 Types of Regression Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Random Forest
+    - XGBoost
+    - LightGBM
+    - CatBoost
+    - Gradient Boosting
+    - AdaBoost
+    - Extra Trees
+    - K-Nearest Neighbors
+    - Support Vector Machines
+    - Logistic Regression
+    - Decision Trees
+    - Neural Networks
+    - Naive Bayes
+    - Linear Discriminant Analysis
+    - Quadratic Discriminant Analysis
+    - Stochastic Gradient Descent
+    - Bagging
+    - Voting
+    - Stacking
+    - Multi-layer Perceptron
+
+4) the best 20 Types of Clustering Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - K-Means
+    - DBSCAN
+    - Agglomerative
+    - BIRCH
+    - Mean Shift
+    - Affinity Propagation
+    - Spectral Clustering
+    - OPTICS
+    - HDBSCAN
+    - Mini-Batch K-Means
+    - Gaussian Mixture Model
+    - Birch
+    - K-Means++
+    - K-Means||
+    - K-Means X
+    - K-Means Y 
+
+5) the best 20 Types of Dimensionality Reduction Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - PCA
+    - LDA
+    - Kernel PCA
+    - MDS
+    - Isomap
+    - t-SNE
+    - UMAP
+    - Autoencoder
+    - LLE
+    - ICA
+    - SVD
+    - NMF
+    - LSA
+    - LDA
+    - LFA
+    - LPA
+    - LCA
+    - LBA
+    - LGA
+    - LHA
+
+6) the best 20 Types of Recommendation Systems Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Collaborative Filtering
+    - Content-Based Filtering
+    - Hybrid Filtering
+    - Matrix Factorization
+    - Singular Value Decomposition
+    - Deep Learning
+    - Autoencoders
+
+7) the best 20 Types of Reinforcement Learning Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Q-Learning
+    - SARSA
+    - DQN
+    - DDPG
+    - A3C
+    - PPO
+    - TRPO
+    - D4PG
+    - D2PG
+    - D3PG
+    - D5PG
+    - D6PG
+    - D7PG
+    - D8PG
+    - D9PG
+    - D10PG
+    - D11PG
+    - D12PG
+    - D13PG
+    - D14PG
+
+8) the best 20 Types of Natural Language Processing Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Tokenization
+    - Stopwords Removal
+    - Stemming
+    - Lemmatization
+    - Bag of Words
+    - TF-IDF
+    - Word2Vec
+    - GloVe
+    - FastText
+    - BERT
+    - GPT-2
+    - Transformer
+    - Attention
+    - RNN
+    - LSTM
+    - GRU
+    - BiLSTM
+    - BiGRU
+    - BiRNN
+    - CNN
+
+9) the best 20 Types of Computer Vision Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Image Classification
+    - Object Detection
+    - Image Segmentation
+    - Image Recognition
+    - Image Generation
+    - Image Super-Resolution
+    - Image Inpainting
+    - Image Colorization
+    - Image Style Transfer
+    - Image Captioning
+    - Image Restoration
+    - Image Denoising
+    - Image Deblurring
+
+
+10) the best 20 Types of Time Series Forecasting Algorithms in descending order of best results:
+    - ARIMA
+    - SARIMA
+    - ARIM
+
+11) the best 20 Types of Anomaly Detection Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Isolation Forest
+    - One-Class SVM
+    - Local Outlier Factor
+    - Autoencoder
+    - Variational Autoencoder
+    - Generative Adversarial Network
+    - K-Means
+    - DBSCAN
+    - Agglomerative
+    - BIRCH
+    - Mean Shift
+    - Affinity Propagation
+    - Spectral Clustering
+    - OPTICS
+    - HDBSCAN
+    - Mini-Batch K-Means
+    - Gaussian Mixture Model
+    - Birch
+    - K-Means++
+    - K-Means||
+
+12) the best Types of Sentiment Analysis Algorithms:
+    - VADER
+    - TextBlob
+    - AFINN
+    - SentiWordNet
+    - Pattern
+    - SenticNet
+    - EmoLex
+    - SentiStrength
+    - SenticNet
+    - EmoLex
+    - SentiStrength
+    - SentiWordNet
+    - Pattern
+
+
+13) the best 20 Types of Image Recognition Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - Image Classification
+    - Object Detection
+    - Image Segmentation
+    - Image Recognition
+    - Image Generation
+    - Image Super-Resolution
+    - Image Inpainting
+    - Image Colorization
+    - Image Style Transfer
+    - Image Captioning
+    - Image Restoration
+    - Image Denoising
+
+14) the best 20 Types of Object Detection Algorithms in descending order of best results with precision, recall, f1-score, accuracy, and roc-auc score:
+    - YOLO
+    - SSD
+    - Faster R-CNN
+    - RetinaNet
+    - R-FCN
+    - FPN
+    - RFCN
+    - Mask R-CNN
+    - Cascade R-CNN
+    - CenterNet
+    - CornerNet
+    - CornerNet-Lite
+
+
+
+
+
+
