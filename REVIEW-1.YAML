@@ -1,0 +1,34 @@
+1) THE MOST MATTER LIBRALLY IN MACHINE LEARNING FOR USE:
+    import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from sklearn.model_selection import train_test_split # for splitting the data into training and testing sets
+    from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler, LabelEncoder, OneHotEncoder # for handling categorical data
+    from sklearn.impute import SimpleImputer # for handling missing values
+          example:
+          imputer = SimpleImputer(missing_values=np.nan, strategy='mean/median/most_frequent/constant', fill_value=None)
+    
+    from sklearn.compose import ColumnTransformer # for applying transformers to columns of the dataset
+          example: 
+          ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough') # 0 is the index of the column to be transformed
+          X = np.array(ct.fit_transform(X))
+
+    
+    from sklearn.pipeline import Pipeline # for creating a pipeline of workflows
+          example:
+          pipe = Pipeline(steps=[('imputer', SimpleImputer(strategy='mean')), ('scaler', StandardScaler())])
+          X = pipe.fit_transform(X)
+    
+    # the best library for selecting the best features:
+    from sklearn.feature_selection import SelectKBest, f_classif, f_regression, chi2, mutual_info_classif, mutual_info_regression
+          example for regression:
+          selector = SelectKBest(score_func=f_regression, k=5) # k is the number of features to be selected
+          X_new = selector.fit_transform(X, y)
+
+          example for classification:
+          selector = SelectKBest(score_func=f_classif, k=5) # k is the number of features to be selected
+          X_new = selector.fit_transform(X, y)
+
+    
+
