@@ -69,4 +69,12 @@
           roc_auc = roc_auc_score(y_test, y_probs_positive) # the higher the better
       
 
-            
+      # confusion matrix:
+      from sklearn.metrics import confusion_matrix
+          cm = confusion_matrix(y_test, y_pred) # rows are the truth and columns are the predictions
+          sns.heatmap(cm, annot=True)
+          plt.xlabel('Predicted')
+          plt.ylabel('Truth')
+          plt.show()
+
+          pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
