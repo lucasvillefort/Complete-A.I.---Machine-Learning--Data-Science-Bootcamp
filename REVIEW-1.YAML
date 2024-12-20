@@ -78,3 +78,34 @@
           plt.show()
 
           pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
+
+
+      # tuning hyperparameters:
+      
+      param_distributions = {'n_estimators': [10, 100, 1000], 'max_depth': [None, 5, 10, 20, 30], 'max_features': ['auto', 'sqrt'], 'min_samples_split': [2, 4, 6], 'min_samples_leaf': [1, 2, 4]}
+
+      from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+      grid = GridSearchCV(estimator, param_grid, scoring='accuracy', cv=10)
+      grid.fit(X, y)
+      print(grid.best_params_)
+      print(grid.best_score_)
+
+      random = RandomizedSearchCV(estimator, param_distributions, n_iter=100, scoring='accuracy', cv=10)
+      random.fit(X, y)
+      print(random.best_params_)
+      print(random.best_score_)
+
+      # save and loading a random model with joblib and pickle:
+      import joblib
+      joblib.dump(model, 'model.pkl')
+      model = joblib.load('model.pkl')
+
+      import pickle
+      pickle.dump(model, open('model.pkl', 'wb'))
+      model = pickle.load(open('model.pkl', 'rb'))
+      
+      
+
+
+
+
