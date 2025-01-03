@@ -1,0 +1,4 @@
+1) SOME GOODS TRICKS:
+    - dataset = pd.read_csv('data.csv', parse_dates=['date'], sep=',') # to parse the date column
+      dataset['date'].dtype == 'datetime64[ns]' == <M8[ns] 
+      
