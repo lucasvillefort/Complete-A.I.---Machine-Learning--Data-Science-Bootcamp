@@ -1,4 +1,26 @@
 1) SOME GOODS TRICKS:
-    - dataset = pd.read_csv('data.csv', parse_dates=['date'], sep=',') # to parse the date column
-      dataset['date'].dtype == 'datetime64[ns]' == <M8[ns] 
-      
+  - &&time -> for see the time in the notebook output 
+  - dataset = pd.read_csv('data.csv', parse_dates=['date'], sep=',') # to parse the date column
+  - dataset['date'].dtype == 'datetime64[ns]' == <M8[ns]
+  - for categorical columns:
+      for label, contents in dataset.items(): # to iterate over the columns of the dataset
+        if pd.api.types.is_string_dtype(contents): # to check if the column is a string column
+          dataset[label] = contents.astype('category').cat.as_ordered() # to convert the column to a categorical column in a specific order in background
+
+  - for missing values:
+    # for categorical columns:
+    categorical_column = dataset.select_dtypes(include=['category']).columns
+
+    for col in categorical_column:
+      if dataset[col].isnull().sum() > 0:
+        dataset[col] = dataset[col].fillna(dataset[col].mode()[0])
+
+    # for numerical columns:
+    numerical_column = dataset.select_dtypes(include=['int64', 'float64']).columns
+
+    for col in numerical_column:
+      if dataset[col].isnull().sum() > 0:
+        dataset[col] = dataset[col].fillna(dataset[col].median())
+
+
+     
