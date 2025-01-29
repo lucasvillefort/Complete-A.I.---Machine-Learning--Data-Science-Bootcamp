@@ -1,0 +1,24 @@
+OBS:
+  - waifu2x converter -  for scaling up the image and video
+  - openai whisper - for generating text and create a subtitle for video
+
+1) Creating a AI CHATBOT, step by step:
+  - chatbot:
+      - turnning the ask into a vector and trying to find the best combination of vectored word inside the embedding space which is close to the question.
+  - Embedding:
+      - 1st step is to convert the text into a vector, which is a numerical representation of the text.
+      - it categorizes the text into a vector space, where similar text is close to each other.
+      - we need to train the model to create the vector space.
+      - retrain the model with the new data could be a bad idea, because it could change the vector space, drop knwledge, what is called catastrophic forgetting.
+      - fine-tuning the model is a better idea, where we train the model with the new data, but we keep the old data as well. it is a final adjustment of the model.
+        it says how i have to ask and how it has to answer me
+  - llm studios: https://lmstudio.ai/ - we can use llm studios to create a chatbot, which is a pre-trained model from hugging face, and we can fine-tune it with our data.
+  - RAG - retrieval-augmented generation model - it is a model that can generate text and also retrieve text from a database.
+  - anythingLLM - graphical interface for llm studios, where we can create a chatbot.
+  - review so far:
+      - graphical interface -> send the message to
+        -> embedding model -> that has a RAG composed of a embedding that convete text into vector and vector database for store the vector or search for
+        -> send to -> llama that has a fine tunning to know how to search for and answer too
+  - step by step:
+      - write a script in python to make it open each file of my classe and remove all time stamps and join them into a unique file
+      - it goes to make too a request to llama make a review of each my class and its key concepts
